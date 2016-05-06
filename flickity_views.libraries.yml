@@ -1,7 +1,7 @@
 flickity:
   version: 1.2.1
   js:
-    /bower_components/flickity/dist/flickity.pkgd.min.js: {}
+    /bower_components/flickity/dist/flickity.pkgd.min.js: { minified: true }
   css:
     component:
       /bower_components/flickity/dist/flickity.min.css: {}
