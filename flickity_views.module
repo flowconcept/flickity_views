@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * A light-weight, customizable lightbox plugin for jQuery 1.3
+ */
+
+use Drupal\Core\Template\Attribute;
+use Drupal\Component\Serialization\Json;
+
+
+/**
+ * Prepares variables for Views Flickity templates.
+ *
+ * Default template: views-view-flickity.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - view: A View object.
+ */
+function template_preprocess_views_view_flickity(&$variables) {
+  /** @var \Drupal\flickity_views\Plugin\views\style\Flickity $handler */
+  $handler = $variables['view']->style_plugin;
+
+  $variables['attributes'] = new Attribute(array('class' => ['js-flickity']));
+
+  // Flickity configuration.
+  $variables['settings'] = $handler->filterOptions();
+  $variables['attributes']['data-flickity-options'] = Json::encode($variables['settings']);
+
+  $variables['#attached']['library'][] = 'flickity_views/flickity';
+  if ($handler->options['flickity_imagesLoaded']) {
+    $variables['#attached']['library'][] = 'flickity_views/flickity-imagesloaded';
+  }
+  if ($handler->options['flickity_asNavFor']) {
+    $variables['#attached']['library'][] = 'flickity_views/flickity-as-nav-for';
+  }
+
+  template_preprocess_views_view_unformatted($variables);
+}

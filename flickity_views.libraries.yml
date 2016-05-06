@@ -1,0 +1,17 @@
+flickity:
+  version: 1.2.1
+  js:
+    /bower_components/flickity/dist/flickity.pkgd.min.js: {}
+  css:
+    component:
+      /bower_components/flickity/dist/flickity.min.css: {}
+
+flickity-imagesloaded:
+  version: 1.0.4
+  js:
+    /bower_components/flickity-imagesloaded/flickity-imagesloaded.js: {}
+
+flickity-as-nav-for:
+  version: 1.0.4
+  js:
+    /bower_components/flickity-as-nav-for/as-nav-for.js: {}

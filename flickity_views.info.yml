@@ -1,0 +1,6 @@
+name: Flickity Views
+type: module
+description: Provides a views display plugin to output a view as Flickity responsive carousel.
+core: 8.x
+dependencies:
+  - views

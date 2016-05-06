@@ -1,0 +1,14 @@
+{
+    "name": "flowconcept/flickity_views",
+    "description": "Implements Flickity carousel as Views display plugin.",
+    "type": "drupal-module",
+    "keywords": [
+        "drupal",
+        "flickity"
+    ],
+    "homepage": "https://github.com/flowconcept/flickity_views",
+    "license": "GPL-2.0+",
+    "support": {
+        "issues": "https://github.com/flowconcept/flickity_views/issues"
+    }
+}
