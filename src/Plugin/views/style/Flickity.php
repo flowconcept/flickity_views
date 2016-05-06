@@ -17,7 +17,7 @@ use Drupal\views\Plugin\views\style\StylePluginBase;
  *
  * @ViewsStyle(
  *   id = "flickity",
- *   title = "Flickity",
+ *   title = @Translation("Flickity"),
  *   help = @Translation("Displays rows as Flickity cells."),
  *   theme = "views_view_flickity",
  *   display_types = {"normal"}
