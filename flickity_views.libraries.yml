@@ -10,8 +10,19 @@ flickity-imagesloaded:
   version: 1.0.4
   js:
     /bower_components/flickity-imagesloaded/flickity-imagesloaded.js: {}
+  dependencies:
+    - flickity
 
 flickity-as-nav-for:
   version: 1.0.4
   js:
     /bower_components/flickity-as-nav-for/as-nav-for.js: {}
+  dependencies:
+    - flickity
+
+flickity-addon:
+  version: VERSION
+  js:
+    js/flickity-addon.js: {}
+  dependencies:
+    - flickity

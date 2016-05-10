@@ -29,6 +29,7 @@ function template_preprocess_views_view_flickity(&$variables) {
   $variables['attributes']['data-flickity-options'] = Json::encode($variables['settings']);
 
   $variables['#attached']['library'][] = 'flickity_views/flickity';
+  $variables['#attached']['library'][] = 'flickity_views/flickity-addon';
   if ($handler->options['flickity_imagesLoaded']) {
     $variables['#attached']['library'][] = 'flickity_views/flickity-imagesloaded';
   }
